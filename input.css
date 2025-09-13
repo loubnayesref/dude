@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom gradient utility */
+
+
+.bg-main-gradient {
+  background: linear-gradient(90deg, rgba(37, 33, 48, 0.9), rgba(10, 17, 36, 0.9));
+}
+.glow-text {
+  text-shadow: 0 0 2px #cafff2, 0 0 4px #cafff2, 0 0 2px #abfde9;
+}
+.glow { /* main text color */
+  text-shadow: 
+    0 0 2px #d9ebea,
+    0 0 5px #d9ebea,
+    0 0 10px #d9ebea,
+    0 0 20px #d9ebea;
+}
+.box-glow{
+ box-shadow: 
+    0 0 5px #d9ebea,   /* Reduce glow size */
+    0 0 7px #d9ebea;
+}
+button:hover {
+  box-shadow: 
+    0 0 10px #d9ebea,   /* Increased glow size on hover */
+    0 0 20px #d9ebea; /* Slightly enlarge the button */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+.loubna{
+  text-shadow: 
+    0 0 5px rgb(4, 7, 15)   /* Reduce glow size */
+    0 0 10px #d9ebea;
+}
+.size-15 {
+  width: 60px;
+  height: auto;
+}
+.menu-hidden {
+  @apply -translate-y-10 opacity-0 scale-95 pointer-events-none;
+}
+.menu-visible {
+  @apply translate-y-0 opacity-100 scale-100 pointer-events-auto;
+}
